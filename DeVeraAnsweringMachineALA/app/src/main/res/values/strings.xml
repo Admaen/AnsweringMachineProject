@@ -9,8 +9,9 @@
     <string name="placeholderTitle">Name: </string>
     <string name="amTitle">Busy Right Now</string>
     <string name="placeholderTime">Time:  </string>
-    <string name="instanceTime">9:00-13:00  </string>
+    <string name="instanceTime">9:00 13:00  </string>
     <string name="placeholderDesc">Description: </string>
+    <string name="placeholderFile">File: </string>
     <string name="descContent">This is a placeholder content description for the app.</string>
 
     <string name="createTitle">Name: </string>
@@ -21,6 +22,7 @@
     <string name="deleteButton">DELETE</string>
     <string name="hintDesc">Input Description</string>
     <string name="createCreate">Create</string>
+    <string name="create_input_file">Input File</string>
     <string name="create_input_name">Input Name</string>
     <string name="create_input_start_time">Input Start Time</string>
     <string name="create_input_end_time">Input End Time</string>

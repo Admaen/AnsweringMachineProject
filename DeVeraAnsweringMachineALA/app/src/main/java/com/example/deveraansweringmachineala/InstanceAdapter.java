@@ -1,5 +1,7 @@
 package com.example.deveraansweringmachineala;
 
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -8,10 +10,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 class InstanceAdapter extends RecyclerView.Adapter<InstanceAdapter.ViewHolder>{
 
+    Context context;
+
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+    public InstanceAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    {
+
+        LayoutInflater instanceInflater =   LayoutInflater.from(context);
+        View view = instanceInflater.inflate(R.layout.am_instance, parent,false);
+
+
+        return new InstanceAdapter.ViewHolder(view);
     }
 
     @Override
@@ -29,5 +39,8 @@ class InstanceAdapter extends RecyclerView.Adapter<InstanceAdapter.ViewHolder>{
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
         }
+
+
+
     }
 }

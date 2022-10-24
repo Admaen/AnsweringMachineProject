@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
         createInstanceDialog.setCancelable(true);
         createInstanceDialog.setContentView(R.layout.create_instance);
 
-        Button pressCreate = (Button) createInstanceDialog.findViewById(R.id.buttonCreate);
+        Button pressCreate = createInstanceDialog.findViewById(R.id.buttonCreate);
 
-//        pressCreate.setOnClickListener(view -> );
+        pressCreate.setOnClickListener(view -> createInstanceDialog.dismiss());
 
 
 
